@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Textile Machinery | RRR International</title>
+
+    <meta name="description"
+        content="Explore Sulzer, Airjet and Loom textile machinery at RRR International. Contact us for machine details and availability.">
+
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/products.js" defer></script>
+    <script src="./js/products-page.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+<header class="site-header">
+    <div class="container header-container">
+
+    <!-- Company Logo and Name -->
+    <a href="index.html" class="logo" aria-label="RRR International Home">
+
+        <img src="./images/logo.png"
+             alt="RRR International Logo">
+
+        <span class="logo-text">
+            <strong>RRR</strong>
+            <span>INTERNATIONAL</span>
+            <small>TEXTILE MACHINERY</small>
+        </span>
+
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNav">
+        ☰
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="products.html" class="active">Machinery</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="https://wa.me/919976161358"
+           class="nav-cta"
+           target="_blank"
+           rel="noopener noreferrer">
+            Enquire Now
+        </a>
+
+    </nav>
+
+</div>
+
+
+</header>
+
+
+
+    <!-- Products Hero -->
+    <section class="page-hero products-hero">
+        <div class="container">
+
+            <p class="section-label">OUR MACHINERY COLLECTION</p>
+
+            <h1>Explore Our Textile Machinery</h1>
+
+            <p>
+                Discover machinery options for your textile business.
+                Select a category to explore products and enquire about
+                specifications and availability.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">FIND YOUR MACHINE</p>
+
+                <h2>Machinery Catalogue</h2>
+
+                <p>
+                    Search by machine name or filter by machinery category.
+                </p>
+            </div>
+
+
+            <!-- Search -->
+            <div class="product-controls">
+
+                <div class="product-search">
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search machinery by name or model..."
+                        aria-label="Search machinery">
+                </div>
+
+                <div class="category-filters"
+    role="group"
+    aria-label="Filter machinery by category">
+
+<button class="filter-btn active"
+    type="button"
+    data-category="all">
+    All Machinery
+</button>
+
+<button class="filter-btn"
+    type="button"
+    data-category="sulzer">
+    Sulzer
+</button>
+
+<button class="filter-btn"
+    type="button"
+    data-category="airjet">
+    Airjet
+</button>
+
+<button class="filter-btn"
+    type="button"
+    data-category="loom">
+    Loom
+</button>
+
+</div>
+
+
+
+            </div>
+
+
+            <!-- Products will load here -->
+            <div class="products-grid" id="productsGrid">
+
+                <div class="products-loading">
+                    Loading machinery catalogue...
+                </div>
+
+            </div>
+
+            <div class="no-products" id="noProducts" hidden>
+                <h3>No matching machinery found</h3>
+
+                <p>
+                    Try another search term or choose a different category.
+                </p>
+            </div>
+
+
+            <!-- Enquiry Banner -->
+            <div class="products-enquiry">
+
+                <div>
+                    <p class="section-label">NEED HELP?</p>
+
+                    <h2>Looking for a Specific Machine?</h2>
+
+                    <p>
+                        Contact RRR International to discuss your
+                        machinery requirements.
+                    </p>
+                </div>
+
+                <a href="https://wa.me/919976161358?text=Hello%20RRR%20International%2C%20I%20am%20looking%20for%20textile%20machinery."
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Enquire on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>RRR International</h3>
+                <p>Textile Machinery Solutions</p>
+            </div>
+
+            <p>
+                © <span id="currentYear"></span>
+                RRR International. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

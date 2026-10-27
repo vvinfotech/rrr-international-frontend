@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | RRR International</title>
+
+    <meta name="description"
+        content="RRR International administration login page.">
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body.admin-login-page {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0B1730, #1C3458);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .admin-login-wrapper {
+            width: 100%;
+            max-width: 440px;
+        }
+
+        .admin-brand {
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 28px;
+        }
+
+        .admin-brand img {
+            display: block;
+            width: 105px;
+            height: 105px;
+            object-fit: contain;
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 8px;
+            box-sizing: border-box;
+            margin: 0 auto 18px;
+        }
+
+        .admin-brand h1 {
+            font-size: 28px;
+            margin: 0 0 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .admin-brand p {
+            color: #C6D2E3;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .admin-login-card {
+            background: #FFFFFF;
+            padding: 38px;
+            border-radius: 18px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+        }
+
+        .admin-login-card h2 {
+            color: #0B1730;
+            font-size: 25px;
+            margin: 0 0 8px;
+        }
+
+        .admin-login-description {
+            color: #667085;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .admin-form-group {
+            margin-bottom: 20px;
+        }
+
+        .admin-form-group label {
+            display: block;
+            color: #24324A;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+
+        .admin-form-group input {
+            width: 100%;
+            height: 49px;
+            padding: 0 14px;
+            box-sizing: border-box;
+            border: 1px solid #D8E0EB;
+            border-radius: 9px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .admin-form-group input:focus {
+            border-color: #F59E0B;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+        }
+
+        .admin-password-wrapper {
+            position: relative;
+        }
+
+        .admin-password-wrapper input {
+            padding-right: 65px;
+        }
+
+        .admin-password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            color: #475467;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .admin-login-button {
+            width: 100%;
+            min-height: 50px;
+            border: 2px solid #F59E0B;
+            border-radius: 9px;
+            background: #F59E0B;
+            color: #0B1730;
+            font-size: 15px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 5px;
+        }
+
+        .admin-login-button:hover {
+            background: #0B1730;
+            color: #FFFFFF;
+            border-color: #0B1730;
+            transform: translateY(-2px);
+        }
+
+        .admin-login-message {
+            display: none;
+            color: #B42318;
+            background: #FEF3F2;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+
+        .admin-login-footer {
+            text-align: center;
+            color: #C6D2E3;
+            font-size: 12px;
+            line-height: 1.7;
+            margin-top: 24px;
+        }
+
+        .admin-back-link {
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: 18px;
+        }
+
+        .admin-back-link:hover {
+            color: #F59E0B;
+        }
+
+        @media (max-width: 480px) {
+            body.admin-login-page {
+                padding: 18px;
+            }
+
+            .admin-login-card {
+                padding: 26px 21px;
+            }
+
+            .admin-brand h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body class="admin-login-page">
+
+    <main class="admin-login-wrapper">
+
+        <div class="admin-brand">
+
+            <img src="../images/logo.png"
+                alt="RRR International Logo">
+
+            <h1>RRR International</h1>
+
+            <p>Textile Machinery Management</p>
+
+        </div>
+
+
+        <section class="admin-login-card">
+
+            <h2>Admin Login</h2>
+
+            <p class="admin-login-description">
+                Administration access for managing machinery
+                listings and availability.
+            </p>
+
+
+            <form id="adminLoginForm">
+
+                <div class="admin-form-group">
+
+                    <label for="adminUsername">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="adminUsername"
+                        name="username"
+                        placeholder="Enter admin username"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+
+                <div class="admin-form-group">
+
+                    <label for="adminPassword">
+                        Password
+                    </label>
+
+                    <div class="admin-password-wrapper">
+
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            name="password"
+                            placeholder="Enter admin password"
+                            autocomplete="current-password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="admin-password-toggle"
+                            id="toggleAdminPassword"
+                            aria-label="Show password">
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="admin-login-button">
+                    Sign In →
+                </button>
+                
+                <div
+                    id="adminLoginMessage"
+                    class="admin-login-message"
+                    role="alert">
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <div class="admin-login-footer">
+
+            <a href="../index.html" class="admin-back-link">
+                ← Back to Website
+            </a>
+
+            <p>
+                © <span id="adminCurrentYear"></span>
+                RRR International
+            </p>
+
+        </div>
+
+    </main>
+
+<script>
+    const API_URL = "http://localhost:8082/api/admin/verify";
+
+    const passwordInput = document.getElementById("adminPassword");
+    const passwordToggle = document.getElementById("toggleAdminPassword");
+    const loginForm = document.getElementById("adminLoginForm");
+    const loginMessage = document.getElementById("adminLoginMessage");
+    const submitButton = loginForm.querySelector('button[type="submit"]');
+
+    passwordToggle.addEventListener("click", function () {
+        const hidden = passwordInput.type === "password";
+
+        passwordInput.type = hidden ? "text" : "password";
+        passwordToggle.textContent = hidden ? "Hide" : "Show";
+
+        passwordToggle.setAttribute(
+            "aria-label",
+            hidden ? "Hide password" : "Show password"
+        );
+    });
+
+    document.getElementById("adminCurrentYear").textContent =
+        new Date().getFullYear();
+
+    loginForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const username =
+            document.getElementById("adminUsername").value.trim();
+
+        const password = passwordInput.value;
+
+        const authHeader =
+            "Basic " + btoa(username + ":" + password);
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Signing in...";
+
+        loginMessage.style.display = "block";
+        loginMessage.style.color = "#475467";
+        loginMessage.textContent = "Verifying credentials...";
+
+        try {
+            const response = await fetch(API_URL, {
+                method: "GET",
+                headers: {
+                    "Authorization": authHeader,
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                sessionStorage.setItem("rrrAdminAuth", authHeader);
+                window.location.href = "dashboard.html";
+                return;
+            }
+
+            if (response.status === 401) {
+                loginMessage.style.color = "#B42318";
+                loginMessage.textContent =
+                    "Invalid username or password.";
+            } else if (response.status === 403) {
+                loginMessage.style.color = "#B42318";
+                loginMessage.textContent =
+                    "Access denied. Check admin permissions.";
+            } else {
+                loginMessage.style.color = "#B42318";
+                loginMessage.textContent =
+                    "Login failed. Please check the backend configuration.";
+            }
+        } catch (error) {
+            loginMessage.style.color = "#B42318";
+            loginMessage.textContent =
+                "Cannot connect to the backend. Ensure Spring Boot is running on port 8082.";
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = "Sign In →";
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

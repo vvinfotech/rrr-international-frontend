@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Machinery Gallery | RRR International</title>
+
+    <meta name="description"
+        content="Explore textile machinery photos and collections from RRR International, including Sulzer, Airjet and Loom machinery.">
+
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/script.js" defer></script>
+<script src="./js/products.js" defer></script>
+<script src="./js/gallery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+<header class="site-header">
+    <div class="container header-container">
+
+    <!-- Company Logo and Name -->
+    <a href="index.html" class="logo" aria-label="RRR International Home">
+
+        <img src="./images/logo.png"
+             alt="RRR International Logo">
+
+        <span class="logo-text">
+            <strong>RRR</strong>
+            <span>INTERNATIONAL</span>
+            <small>TEXTILE MACHINERY</small>
+        </span>
+
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNav">
+        ☰
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="products.html">Machinery</a>
+
+        <a href="gallery.html" class="active">Gallery</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="https://wa.me/919976161358"
+           class="nav-cta"
+           target="_blank"
+           rel="noopener noreferrer">
+            Enquire Now
+        </a>
+
+    </nav>
+
+</div>
+</header>
+
+
+
+    <!-- Gallery Hero -->
+    <section class="page-hero gallery-hero">
+        <div class="container">
+
+            <p class="section-label">OUR MACHINERY GALLERY</p>
+
+            <h1>Explore Our Machinery Collection</h1>
+
+            <p>
+                Browse machinery photographs by category.
+                Select an image to view it in a larger format.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">VISUAL SHOWCASE</p>
+
+                <h2>Machinery Gallery</h2>
+
+                <p>
+                    Explore the gallery and contact us for product details.
+                </p>
+
+            </div>
+
+
+            <!-- Category Filters -->
+            <div class="gallery-filters"
+    role="group"
+    aria-label="Filter gallery by category">
+
+<button class="gallery-filter active"
+    type="button"
+    data-category="all">
+    All Photos
+</button>
+
+<button class="gallery-filter"
+    type="button"
+    data-category="sulzer">
+    Sulzer
+</button>
+
+<button class="gallery-filter"
+    type="button"
+    data-category="airjet">
+    Airjet
+</button>
+
+<button class="gallery-filter"
+    type="button"
+    data-category="loom">
+    Loom
+</button>
+
+</div>
+
+
+
+            <!-- Gallery Items -->
+<div class="gallery-grid" id="galleryGrid">
+    <!-- Machinery photos will be loaded using gallery.js -->
+</div>
+
+<p class="gallery-note" id="galleryNote">
+    Browse our textile machinery collection. Contact RRR International
+    to confirm machine specifications and availability.
+</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Lightbox -->
+<div class="gallery-lightbox"
+     id="galleryLightbox"
+     aria-hidden="true"
+     hidden>
+
+    <div class="lightbox-content">
+
+        <button class="lightbox-close"
+                id="lightboxClose"
+                type="button"
+                aria-label="Close photo viewer">
+            &times;
+        </button>
+
+        <img id="lightboxImage"
+             class="lightbox-image"
+             src=""
+             alt="Textile machinery">
+
+        <h2 id="lightboxTitle">Machinery Photo</h2>
+
+        <a id="lightboxEnquire"
+           class="btn btn-primary"
+           href="https://wa.me/919976161358"
+           target="_blank"
+           rel="noopener noreferrer">
+            Enquire on WhatsApp
+        </a>
+
+    </div>
+
+</div>
+
+
+    <!-- Contact CTA -->
+    <section class="contact-banner">
+
+        <div class="container contact-banner-content">
+
+            <div>
+                <p class="section-label">INTERESTED IN OUR MACHINERY?</p>
+
+                <h2>Let's Talk About Your Requirements</h2>
+
+                <p>
+                    Contact RRR International for machinery details
+                    and availability.
+                </p>
+            </div>
+
+            <a href="https://wa.me/919976161358"
+                class="btn btn-light"
+                target="_blank"
+                rel="noopener noreferrer">
+                Enquire on WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>RRR International</h3>
+                <p>Textile Machinery Solutions</p>
+            </div>
+
+            <p>
+                © <span id="currentYear"></span>
+                RRR International. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
