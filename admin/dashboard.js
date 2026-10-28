@@ -3,8 +3,8 @@
 // ========================================
 
 
-const API_URL = "http://localhost:8082/api/machinery";
-const ADMIN_VERIFY_URL = "http://localhost:8082/api/admin/verify";
+const API_URL = "https://rrr-international-backend.onrender.com/api/machinery";
+const ADMIN_VERIFY_URL = "https://rrr-international-backend.onrender.com/api/admin/verify";
 
 let selectedImageFile = null;
 
