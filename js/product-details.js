@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "productDetailsNotFound"
     );
 
-    const API_URL = "http://localhost:8082/api/machinery";
+    const API_URL = "https://rrr-international-backend.onrender.com/api/machinery";
 
     // ------------------------------------------
     // ESCAPE HTML VALUES
