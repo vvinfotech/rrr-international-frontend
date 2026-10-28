@@ -7,7 +7,7 @@
    API: http://localhost:8082
 ========================================== */
 
-const API_BASE_URL = "http://localhost:8082";
+const API_URL = "https://rrr-international-backend.onrender.com/api/admin/verify";
 
 const authCredentials = sessionStorage.getItem("rrrAdminAuth");
 
