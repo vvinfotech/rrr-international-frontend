@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const API_URL = "http://localhost:8082/api/machinery";
+    const API_URL = "https://rrr-international-backend.onrender.com/api/machinery";
 
     let activeCategory = "all";
     let allProducts = [];
